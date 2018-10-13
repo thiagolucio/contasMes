@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-brand {
+    color: white!important;
+}
+
+.container {
+    width: 80%;
+}
+
+.margin-content {
+     margin: auto;
+    margin-top: 3%;
+}
+.display-none {display: none;}
+
+.errorColor {
+    color: #FF0000;
+    font-weight: bold;
+   -webkit-text-stroke: 0.6px lightgray;
+}
+.form-id {
+    width: 80px;
+}
+
+/*PERSONALIZADO*/
+.nomeMes {
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+.text-light{color: #FFFFFF;}
+thead {background: #333333; color: #FFFFFF;}

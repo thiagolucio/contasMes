@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+            crossorigin="anonymous">        
+            <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css">
+        <title>Controle de Contas</title>
+    </head>
+
+    <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-calculator"></i>
+            <span>Controle de Contas Mensais</span>
+        </a>
+
+    
+        <!-- <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div> -->
+    </nav>
+    
+    
+    <div class="container margin-content">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-primary tituloApp">
+                    <!-- Text Tile inser by JS - User List Management -->
+                </h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive-sm">
+                            <div>Mês Vigente: <span class="nomeMes"></span></div>
+                            <table class="table table-md table-striped table-hover table-bordered">                                
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Descrição</th>
+                                        <th scope="col">Valor</th>
+                                        <th scope="col">Observação</th>                                        
+                                    </tr>
+                                </thead>
+                                <div class="row">
+                                    <div class="alert alert-danger display-none" role="alert">
+                                        Não pode ficar vazio!
+                                    </div>
+                                </div>
+                                <tbody class="contas" id="table-contas">
+                                    <tr class="tr-conta">                                        
+                                        <td class="td-descricao-conta">Aqui descricao da conta</td>
+                                        <td class="td-valor-conta">13225666</td>
+                                        <td class="td-obs-conta">Aqui vai a observacao da conta</td>                    
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="margin: 8px 0; padding: 8px 0; background: #333; color: aliceblue;">
+            <div class="col-md-4">                
+                <span> TOTAL: </span>
+            </div>
+            <div class="col-md-4">
+                <span> PAGO: </span>
+            </div>
+            <div class="col-md-4">
+                <span>RESTANTE: </span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container">
+        <form id="form-add-conta">
+            <div class="form-row">
+                <div class="col-md-4 form-group input-group-sm mb-3">                
+                    <label for="inputDescricaoConta">Descrição Conta</label>                    
+                    <input type="text" class="form-control" id="inputDescricaoConta" placeholder="Descrição" value="" required>
+                </div>
+ 
+                <div class="col-md-2 form-group input-group-sm mb-3">
+                    <label for="inputValorConta">Valor da Conta</label>
+                    <input type="number" class="form-control" id="inputValorConta" placeholder="Valor Conta" value="" required>
+                </div>
+
+                <div class="col-md-6 form-group input-group-sm mb-3">
+                    <label for="inputObsConta">Observação sobre Conta</label>
+                    <textarea type="textarea" class="form-control" id="inputObsConta" placeholder="Observação" value="" required maxlength="100" size="2"></textarea>
+                </div>
+            </div>
+            <div class="form-row"> 
+                <div class="col-md-3 form-group input-group-sm mb-3">                    
+                    <button class="btn btn-success" type="submit" id="addConta"><i class="fas fa-plus-circle"></i> Adicionar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+        <script src="js/custom.js"></script>
+        <script src="js/addConta.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
